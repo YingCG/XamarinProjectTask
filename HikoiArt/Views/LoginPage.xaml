@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HikoiArt.Views.LoginPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label>Welcome to the Resource Art Club</Label>
+
+            <Entry x:Name="emailEntry"
+                   Placeholder="Email"
+                   Keyboard="Email"/>
+            <Entry x:Name="passwordEntry"
+                   Placeholder="Password"
+                   IsPassword="True"/>
+            <Button x:Name="loginButton"
+                    Text="Log In"
+                    BackgroundColor="DarkOliveGreen"
+                    TextColor="White"
+                    Clicked="loginButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

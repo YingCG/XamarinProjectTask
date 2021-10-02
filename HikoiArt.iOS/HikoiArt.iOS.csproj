@@ -120,7 +120,6 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
@@ -135,5 +134,8 @@
       <Project>{80026702-8534-41E2-A474-1187C1DD91A6}</Project>
       <Name>HikoiArt</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\delete.png" />
   </ItemGroup>
 </Project>

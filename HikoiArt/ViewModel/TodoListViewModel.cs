@@ -2,14 +2,16 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace HikoiArt.ViewModel
 {
-    class TodoListViewModel
+    class TodoListViewModel : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
         public ObservableCollection<TodoItem> TodoItems { get; set; }
         public TodoListViewModel()
         {
@@ -21,10 +23,26 @@ namespace HikoiArt.ViewModel
         }
 
         public ICommand AddTodoCommand => new Command(AddTodoItem);
-        public string NewTodoInputValue { get; set; }
+        private string _newTodoInputValue;
+        public string NewTodoInputValue
+        {
+            get => _newTodoInputValue;
+            set
+            {
+                bool hasChanged = _newTodoInputValue != value;
+                _newTodoInputValue = value;
+                if (hasChanged && PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs("NewTodoInputValue"));
+                }
+            }
+        }
+
+
         void AddTodoItem()
         {
-           TodoItems.Add(new TodoItem(NewTodoInputValue, false));
+            TodoItems.Add(new TodoItem(NewTodoInputValue, false));
+            NewTodoInputValue = "";
         }
 
         public ICommand RemoveTodoCommand => new Command(RemoveTodoItem);

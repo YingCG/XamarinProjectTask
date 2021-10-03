@@ -11,5 +11,19 @@ namespace HikoiArt.Views
         {
             InitializeComponent();
         }
+
+        async private void ProfileSetting_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.HomePage());
+         }
+        async private void MyBooking_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.MyBookingPage());
+        }
+
+        async private void MyActivity_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.MyActivityPage());
+        }
     }
 }

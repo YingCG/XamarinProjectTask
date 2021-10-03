@@ -4,6 +4,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="HikoiArt.Views.ProfilePage">
     <ContentPage.Content>
-        <Button Text="Setting"></Button>
+        <ScrollView>
+            <StackLayout>
+                <!--<Button x:Name="ProfileSetting"
+                                Text="Setting"
+                                Clicked="ProfileSetting_Clicked"/>
+                <Button Text="Setting"></Button>-->
+                
+                <Button x:Name="MyBooking"
+                                Text="MyBooking"
+                                Clicked="MyBooking_Clicked"/>
+                <Button x:Name="MyActivity"
+                                Text="My Activity"
+                                Clicked="MyActivity_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+       
     </ContentPage.Content>
 </ContentPage>

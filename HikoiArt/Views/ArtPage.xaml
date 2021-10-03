@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HikoiArt.Views.ArtPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20">
+                <Image Source="BookPages.jpg"/>
+                <Label>Art work from old books</Label>
+
+                <Image Source="BookSculpture.png"/>
+                <Label>Book Sculpture</Label>
+
+                <Image Source="GardenDoor.jpg"/>
+                <Label>Garden Door with rusty tools</Label>
+
+                <Image Source="GraderLampshade.jpg"/>
+                <Label>Lamp shade made from ops shop</Label>
+
+                <Image Source="WindowsDoors.jpg"/>
+                <Label>Where is the entrances?</Label>
+            </StackLayout>
+        </ScrollView> 
+    </ContentPage.Content>
+</ContentPage>

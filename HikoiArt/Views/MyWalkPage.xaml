@@ -4,6 +4,39 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="HikoiArt.Views.MyWalkPage">
     <ContentPage.Content>
-        <ActivityIndicator></ActivityIndicator>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Experience the relationship between people and places" 
+                   Margin="20, 20, 20, 0"
+                   FontSize="21"
+                   TextColor="DarkOliveGreen"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"/>
+                
+                <StackLayout>
+                    <Image Source="walking.jpg"></Image>
+                    <StackLayout Margin="20">
+                    <Label Text="Hikoi around your neighbourhood with us to explore surfaces and textures. Make prints by rubbing what you find in the spaces and places of your surrounding environment."  
+                           TextColor="Black"
+                           FontFamily="Roboto"
+                           />
+
+                        <Label Text="Taking a few 10-minutes walks spread throughout the day everyday makes a differents. Not only is it good for your physical health, it also positively impacts your mood and mental health."
+                           TextColor="Black"
+                           FontFamily="Roboto"
+                           />
+                    </StackLayout>
+                    <Button x:Name="KeepTrack"
+                    Padding="100, 0, 100, 0"
+                    HorizontalOptions="Center"
+                    Text="Keep Track"
+                    BackgroundColor="DarkOliveGreen"
+                    TextColor="White"
+                    CornerRadius="50"
+                    Clicked="KeepTrack_Clicked" />
+                </StackLayout>
+               
+            </StackLayout>
+       </ScrollView>
     </ContentPage.Content>
 </ContentPage>

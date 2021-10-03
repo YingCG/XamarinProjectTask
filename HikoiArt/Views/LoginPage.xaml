@@ -5,8 +5,9 @@
     x:Class="HikoiArt.Views.LoginPage">
 
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="20">
             <Label>Welcome to the Resource Art Club</Label>
+            <Image Source="EggShellFaces.jpg"/>
 
             <Entry x:Name="emailEntry"
                    Placeholder="Email"
@@ -18,6 +19,7 @@
                     Text="Log In"
                     BackgroundColor="DarkOliveGreen"
                     TextColor="White"
+                    CornerRadius="50"
                     Clicked="loginButton_Clicked"/>
         </StackLayout>
     </ContentPage.Content>

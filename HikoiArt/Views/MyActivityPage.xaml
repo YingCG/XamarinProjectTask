@@ -4,6 +4,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="HikoiArt.Views.MyActivityPage">
     <ContentPage.Content>
-        <Label Text="your map of this week"/>
+        <ScrollView>
+            <Grid>
+                <Label Text="your map of this week"/>
+                <Button x:Name="Profile"
+                                    Text="Profile"
+                                    Clicked="Profile_Clicked"/>
+                <!--<FlexLayout>
+                    <
+                    <Button x:Name="MyBooking"
+                                Text="MyBooking"
+                                Clicked="MyBooking_Clicked"/>
+                    <Button x:Name="MyActivity"
+                                Text="My Activity"
+                                Clicked="MyActivity_Clicked"/>
+                </FlexLayout>-->
+            </Grid>
+        </ScrollView>
+        
     </ContentPage.Content>
 </ContentPage>

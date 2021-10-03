@@ -6,7 +6,7 @@
     x:Class="HikoiArt.Views.HomePage">
 
     <views:MyWalkPage Title="Walk"/>
-    <views:MyActivityPage Title="Art"/>
+    <views:ArtPage Title="Art"/>
     <views:MyResoucePage Title="Resource"/>
 </TabbedPage>
 

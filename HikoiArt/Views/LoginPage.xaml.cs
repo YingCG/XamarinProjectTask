@@ -23,7 +23,7 @@ namespace HikoiArt.Views
             }
             else
             {
-                await Navigation.PushAsync(new HomePage());
+                await Navigation.PushAsync(new MyActivityPage());
             }
         }
     }

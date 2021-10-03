@@ -138,4 +138,37 @@
   <ItemGroup>
     <BundleResource Include="Resources\delete.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\IMG_20200329_180315.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\walking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BookSculpture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GarbageFish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GardenDoor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BookPages.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sheep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\OldClothesFruitBag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GraderLampshade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WindowsDoors.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EggShellFaces.jpg" />
+  </ItemGroup>
 </Project>

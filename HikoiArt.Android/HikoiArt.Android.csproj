@@ -85,7 +85,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\IMG_20200329_180315.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HikoiArt\HikoiArt.csproj">
       <Project>{80026702-8534-41E2-A474-1187C1DD91A6}</Project>

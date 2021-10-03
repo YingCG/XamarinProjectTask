@@ -2,13 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HikoiArt.MainPage">
-    <ContentPage.Content>
+    <ScrollView>
         <StackLayout>
-            <Label Text="Let creativity part of your Everyday life" />
-        
+            <Label Text="Let creativity part of your Everyday life" 
+                   Margin="20"
+                   FontSize="20"
+                   TextColor="DarkOliveGreen"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"/>
+
+            <StackLayout Margin="20">
+                <Image Source="IMG_20200329_180315.jpg"></Image>
+                <Label Text="This space is for people who like to build up habit to go for walk in daily routine"
+                        TextColor="Black"
+                       FontFamily="Roboto"/>
+                <Label Text="This space is for people who enjoy art"
+                       TextColor="Black"
+                       FontFamily="Roboto"/>
+                <Label Text="This space is for people who make effort to divert useful resources from the landfill, redirect these items to the public for art and inspire creativity, and help us all rethink what we throw away."
+                       TextColor="Black"
+                       FontFamily="Roboto"/>
+            </StackLayout>
+
             <Button x:Name="BrowseBtn"
+                    Margin="20"
                Text="Browse"
+               BackgroundColor="DarkOliveGreen"
+               TextColor="White"
                Clicked="BrowseBtn_Clicked" />
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

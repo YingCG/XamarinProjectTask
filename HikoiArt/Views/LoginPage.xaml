@@ -25,16 +25,12 @@
                         JustifyContent="SpaceAround">
                 <Button x:Name="loginButton"
                         Text="Member"
-                        BackgroundColor="DarkOliveGreen"
-                        TextColor="White"
-                        CornerRadius="50"
+                        Style="{StaticResource normalButton}"
                         Padding="50, 0, 50, 0"
                         Clicked="loginButton_Clicked"/>
                 <Button x:Name="adminLogin"
                         Text="Admin"
-                        BackgroundColor="DarkOliveGreen"
-                        TextColor="White"
-                        CornerRadius="50"
+                        Style="{StaticResource normalButton}"
                         Padding="50, 0, 50, 0"
                         Clicked="adminLogin_Clicked"/>
             </FlexLayout>

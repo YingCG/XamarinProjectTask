@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HikoiArt.Views.AddNewResource">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="20">
             <Entry Keyboard="Text" Placeholder="Item Name" x:Name="_nameEntry"></Entry>
             <Entry Keyboard="Text" Placeholder="Inventory" x:Name="_numberEntry"></Entry>
-            <Button x:Name="addBtn" Text="Add" Clicked="addBtn_Clicked" ></Button>
+            <Button x:Name="addBtn" 
+                    Text="Add" 
+                    BackgroundColor="#b0ddc0"
+                    TextColor="Black"
+                    FontFamily="Roboto"
+                    CornerRadius="50"
+                    Clicked="addBtn_Clicked" ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

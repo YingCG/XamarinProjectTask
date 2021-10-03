@@ -5,6 +5,11 @@
     xmlns:views="clr-namespace:HikoiArt.Views"
     x:Class="HikoiArt.Views.HomePage">
 
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Profile"
+                     Clicked="ToolbarItem_Clicked"/>
+
+    </TabbedPage.ToolbarItems>
     <views:MyWalkPage Title="Walk"/>
     <views:ArtPage Title="Art"/>
     <views:MyResoucePage Title="Resource"/>

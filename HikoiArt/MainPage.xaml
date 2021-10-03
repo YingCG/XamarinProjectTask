@@ -28,9 +28,7 @@
                     Padding="100, 5, 100, 5"
                     HorizontalOptions="Center"
                     Text="Browse"
-                    BackgroundColor="DarkOliveGreen"
-                    TextColor="White"
-                    CornerRadius="50"
+                    Style="{StaticResource normalButton}"
                     Clicked="BrowseBtn_Clicked" />
         </StackLayout>
     </ScrollView>

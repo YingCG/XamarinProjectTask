@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HikoiArt.Views.GetDetailsPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="20">
             <Label Text="View all our resource details"/>
             <ListView x:Name="listview"></ListView>
         </StackLayout>

@@ -3,12 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HikoiArt.Views.EditPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="20">
             <ListView x:Name="listview"/>
             <Entry x:Name="ID" Keyboard="Text" Placeholder="ID" IsVisible="False"></Entry>
             <Entry x:Name="name" Keyboard="Text" Placeholder="Item Name"></Entry>
             <Entry x:Name="inventory" Keyboard="Text" Placeholder="Number of Item"></Entry>
-            <Button x:Name="update" Text="Update" Clicked="update_Clicked"></Button>
+            <Button x:Name="update" 
+                    Text="Update" 
+                    BackgroundColor="#b0ddc0"
+                    TextColor="Black"
+                    FontFamily="Roboto"
+                    CornerRadius="50"
+                    Clicked="update_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

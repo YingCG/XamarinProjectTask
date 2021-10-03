@@ -4,16 +4,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="HikoiArt.Views.ProfilePage">
         <ScrollView>
-            <StackLayout Margin="10, 10, 10, 0">
+            <StackLayout Margin="20">
                 
                 <Button x:Name="MyBooking"
-                                Text="My Booking"
-                                Clicked="MyBooking_Clicked"/>
+                        Text="My Booking"
+                        Style="{StaticResource normalButton}"
+                        Clicked="MyBooking_Clicked"/>
                 <Button x:Name="MyActivity"
-                                Text="My Activity"
-                                Clicked="MyActivity_Clicked"/>
+                        Text="My Activity"
+                        Style="{StaticResource normalButton}"
+                        Clicked="MyActivity_Clicked"/>
             <Button x:Name="MyResource"
                         Text="My Resource"
+                        Style="{StaticResource normalButton}"
                         Clicked="MyResource_Clicked"/>
         </StackLayout>
         </ScrollView>

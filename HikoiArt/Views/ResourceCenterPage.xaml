@@ -1,12 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:HikoiArt.ViewModel"
                 x:Class="HikoiArt.Views.ResourceCenterPage">
-
-    <ContentPage.BindingContext>
-        <local:TodoListViewModel />
-    </ContentPage.BindingContext>
 
     <StackLayout>
         <StackLayout Margin="20">
@@ -22,26 +17,23 @@
                    TextColor="Black"/>
             <Button x:Name="AddItem"
                     Text="Add New Item"
+                    Style="{StaticResource normalButton}"
                     BackgroundColor="#b0ddc0"
                     TextColor="Black"
-                    FontFamily="Roboto"
-                    CornerRadius="30"
                     Clicked="AddItem_Clicked"/>
 
             <Button x:Name="getDetails"
                     Text="Get Details"
+                    Style="{StaticResource normalButton}"
                     BackgroundColor="#b0ddc0"
                     TextColor="Black"
-                    FontFamily="Roboto"
-                    CornerRadius="30"
                     Clicked="getDetails_Clicked"/>
 
             <Button x:Name="editDetails"
                     Text="Edit"
+                    Style="{StaticResource normalButton}"
                     BackgroundColor="#b0ddc0"
                     TextColor="Black"
-                    FontFamily="Roboto"
-                    CornerRadius="30"
                     Clicked="editDetails_Clicked"/>
         </StackLayout>
     </StackLayout>

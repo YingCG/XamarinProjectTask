@@ -3,6 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HikoiArt.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="darkOliveGreen">DarkOliveGreen</Color>
+            <Color x:Key="whiteColor">#ffffff</Color>
+            <Font x:Key="buttonFont">Roboto</Font>
 
+            <Style x:Key="normalButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource darkOliveGreen}"/>
+                <Setter Property="TextColor" Value="{StaticResource whiteColor}"/>
+                <Setter Property="Font" Value="{StaticResource buttonFont}"/>
+                <Setter Property="CornerRadius" Value="50"/>
+            </Style>
+
+            
+        </ResourceDictionary>
+        <!--<ResourceDictionary>
+            <Color x:Key="mintGreen">#b0ddc0</Color>
+            <Color x:Key="black">black</Color>
+            <Style  x:Key="adminButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource mintGreen}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource black}"/>
+                <Setter Property="Font" Value="{StaticResource buttonFont}"/>
+                <Setter Property="CornerRadius" Value="{StaticResource roundCorner}"/>
+                <Setter Property="FontAttributes" Value="None"/>
+            </Style>
+        </ResourceDictionary>-->
     </Application.Resources>
 </Application>

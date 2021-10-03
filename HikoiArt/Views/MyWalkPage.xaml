@@ -10,9 +10,8 @@
                 <Label Text="Experience the relationship between people and places" 
                    Margin="20, 20, 20, 0"
                    FontSize="21"
-                   TextColor="DarkOliveGreen"
-                   FontFamily="Roboto"
-                   FontAttributes="Bold"/>
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource darkOliveGreen}"/>
                 <StackLayout  Margin="20, 0, 20, 0">
                     <Label Text="Hikoi around your neighbourhood with us to explore surfaces and textures. Make prints by rubbing what you find in the spaces and places of your surrounding environment."  
                            TextColor="Black"
@@ -29,9 +28,7 @@
                     Padding="100, 0, 100, 0"
                     HorizontalOptions="Center"
                     Text="Log In"
-                    BackgroundColor="DarkOliveGreen"
-                    TextColor="White"
-                    CornerRadius="50"
+                    Style="{StaticResource normalButton}"
                     Clicked="KeepTrack_Clicked" />
                
             </StackLayout>

@@ -36,5 +36,24 @@
                     TextColor="Black"
                     Clicked="editDetails_Clicked"/>
         </StackLayout>
+        
+        <StackLayout Margin="20 ">
+            <Label Text="Planning events and art classes"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Button x:Name="manageEvent"
+                    Text="Manage Event"
+                    Style="{StaticResource normalButton}"
+                    BackgroundColor="#b0ddc0"
+                    TextColor="Black"
+                    Clicked="manageEvent_Clicked"/>
+       
+            <Button x:Name="manageTask"
+                    Text="Manage Task"
+                    Style="{StaticResource normalButton}"
+                    BackgroundColor="#b0ddc0"
+                    TextColor="Black"
+                    Clicked="manageTask_Clicked"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>

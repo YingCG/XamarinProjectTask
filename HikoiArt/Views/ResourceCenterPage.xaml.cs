@@ -31,5 +31,16 @@ namespace HikoiArt.Views
         {
             await Navigation.PushAsync(new Views.EditPage());
         }
+
+        private async void manageEvent_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.PlannerPage());
+        }
+
+        
+        private async void manageTask_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.MyResoucePage());
+        }
     }
 } 

@@ -4,39 +4,87 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="HikoiArt.Views.PlannerPage">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Margin="20">
+        <ScrollView>
+            <StackLayout>
+            <StackLayout BackgroundColor="#b0ddc0">
+                <StackLayout Margin="20">
                 <Label Text="Hi Tutor"
                    FontSize="21"
                    FontAttributes="Bold"
                    TextColor="DarkOliveGreen"/>
 
-            </StackLayout>
-            <StackLayout Margin="20 ">
                 <Label Text="Plan your class here"
                    FontAttributes="Bold"
                    TextColor="Black"/>
+                <Entry
+                    x:Name="TitleInput"
+                    Text="{Binding NewTitleInputValue}"
+                    Placeholder="Class/ Event Title"
+                    ReturnCommand="{Binding AddTitleCommand}"/>
+                <Entry
+                    x:Name="PurposeInput"
+                    Text="{Binding NewPurposeInputValue}"
+                    Placeholder="Purpose of the class"
+                    ReturnCommand="{Binding AddPurposeCommand}"/>
+                
+                <Entry
+                    x:Name="ThemeInput"
+                    Text="{Binding ThemeInputValue}"
+                    Placeholder="Theme to help delivery the class"
+                    ReturnCommand="{Binding AddThemeCommand}"/>
+                
+                <StackLayout>
+                   <Entry
+                    x:Name="MaterialInput"
+                    Text="{Binding MaterialInputValue}"
+                    Placeholder="Material list"
+                    ReturnCommand="{Binding AddMaterialCommand}"/> 
+                </StackLayout>
+
+                <Entry
+                    x:Name="ReferencesInput"
+                    Text="{Binding ReferencesInputValue}"
+                    Placeholder="Useful references"
+                    ReturnCommand="{Binding AddReferencesCommand}"/>
+                
+                <Entry
+                    x:Name="PromotionInput"
+                    Text="{Binding PromotionInputValue}"
+                    Placeholder="Promotion of the class"
+                    ReturnCommand="{Binding AddPromotionCommand}"/>
+                <!--<StackLayout>
+                    <Entry
+                    x:Name="WeelklyPlan"
+                    Text="{Binding WeeklyPlanValue}"
+                    Placeholder="Weekly Plan"
+                    ReturnCommand="{Binding AddWeeklyPlanCommand}"/>
+                </StackLayout>-->
+            </StackLayout>
+            </StackLayout>
+            
+            <StackLayout Margin="20">
+                <FlexLayout Wrap="Wrap"
+                            JustifyContent="SpaceAround">
                 <Button x:Name="AddEvent"
                     Text="Add New Event"
-                    Style="{StaticResource normalButton}"
                     BackgroundColor="#b0ddc0"
-                    TextColor="Black"
+                    TextColor="black"
                     Clicked="AddEvent_Clicked"/>
 
                 <Button x:Name="getClassDetails"
                     Text="Get Details"
-                    Style="{StaticResource normalButton}"
                     BackgroundColor="#b0ddc0"
                     TextColor="Black"
                     Clicked="getClassDetails_Clicked"/>
 
                 <Button x:Name="editClassDetails"
                     Text="Edit"
-                    Style="{StaticResource normalButton}"
                     BackgroundColor="#b0ddc0"
                     TextColor="Black"    
                     Clicked="editClassDetails_Clicked"/>
+                </FlexLayout>
             </StackLayout>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

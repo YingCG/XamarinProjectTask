@@ -3,22 +3,20 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="HikoiArt.Views.ProfilePage">
-    <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
-                <!--<Button x:Name="ProfileSetting"
-                                Text="Setting"
-                                Clicked="ProfileSetting_Clicked"/>
-                <Button Text="Setting"></Button>-->
+            <StackLayout Margin="10, 10, 10, 0">
                 
                 <Button x:Name="MyBooking"
-                                Text="MyBooking"
+                                Text="My Booking"
                                 Clicked="MyBooking_Clicked"/>
                 <Button x:Name="MyActivity"
                                 Text="My Activity"
                                 Clicked="MyActivity_Clicked"/>
-            </StackLayout>
+            <Button x:Name="MyResource"
+                        Text="My Resource"
+                        Clicked="MyResource_Clicked"/>
+        </StackLayout>
         </ScrollView>
        
-    </ContentPage.Content>
+   
 </ContentPage>

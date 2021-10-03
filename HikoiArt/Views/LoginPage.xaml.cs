@@ -23,7 +23,22 @@ namespace HikoiArt.Views
             }
             else
             {
-                await Navigation.PushAsync(new MyActivityPage());
+                await Navigation.PushAsync(new ProfilePage());
+            }
+        }
+
+        async private void adminLogin_Clicked(object sender, EventArgs e)
+        {
+            bool isEmailEmpty = string.IsNullOrEmpty(emailEntry.Text);
+            bool isPasswordEmpty = string.IsNullOrEmpty(passwordEntry.Text);
+
+            if (isEmailEmpty || isPasswordEmpty)
+            {
+                //no value mean do not navigate
+            }
+            else
+            {
+                await Navigation.PushAsync(new ResourceCenterPage());
             }
         }
     }

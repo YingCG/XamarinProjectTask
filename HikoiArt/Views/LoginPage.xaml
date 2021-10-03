@@ -5,9 +5,14 @@
     x:Class="HikoiArt.Views.LoginPage">
 
     <ContentPage.Content>
-        <StackLayout Margin="20">
-            <Label>Welcome to the Resource Art Club</Label>
+        <StackLayout>
             <Image Source="EggShellFaces.jpg"/>
+            <StackLayout Margin="20">
+            <Label Text="Log in to the Hikoi Art"
+                   FontSize="21"
+                   FontAttributes="Bold"
+                   TextColor="DarkOliveGreen"/>
+           
 
             <Entry x:Name="emailEntry"
                    Placeholder="Email"
@@ -15,12 +20,25 @@
             <Entry x:Name="passwordEntry"
                    Placeholder="Password"
                    IsPassword="True"/>
-            <Button x:Name="loginButton"
-                    Text="Log In"
-                    BackgroundColor="DarkOliveGreen"
-                    TextColor="White"
-                    CornerRadius="50"
-                    Clicked="loginButton_Clicked"/>
+            
+            <FlexLayout Wrap="Wrap"
+                        JustifyContent="SpaceAround">
+                <Button x:Name="loginButton"
+                        Text="Member"
+                        BackgroundColor="DarkOliveGreen"
+                        TextColor="White"
+                        CornerRadius="50"
+                        Padding="50, 0, 50, 0"
+                        Clicked="loginButton_Clicked"/>
+                <Button x:Name="adminLogin"
+                        Text="Admin"
+                        BackgroundColor="DarkOliveGreen"
+                        TextColor="White"
+                        CornerRadius="50"
+                        Padding="50, 0, 50, 0"
+                        Clicked="adminLogin_Clicked"/>
+            </FlexLayout>
+        </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 

@@ -16,7 +16,7 @@ namespace HikoiArt
             InitializeComponent();
         }
 
-        async void BrowseBtn_Clicked(System.Object sender, System.EventArgs e)
+        async void BrowseBtn_Clicked(Object sender, System.EventArgs e)
         {
             await Navigation.PushAsync(new Views.HomePage());
         }

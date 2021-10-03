@@ -16,5 +16,20 @@ namespace HikoiArt.Views
         {
             InitializeComponent();
         }
+
+        private async void AddItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.AddNewResource());
+        }
+
+        private async void getDetails_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.GetDetailsPage());
+        }
+
+        private async void editDetails_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.EditPage());
+        }
     }
-}
+} 

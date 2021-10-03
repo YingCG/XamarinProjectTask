@@ -9,40 +9,40 @@
     </ContentPage.BindingContext>
 
     <StackLayout>
-        <Entry
-            x:Name="TodoInput"
-            Text="{Binding NewTodoInputValue}"
-            Placeholder="Create New event"
-            ReturnCommand="{Binding AddTodoCommand}"/>
+        <StackLayout Margin="20">
+        <Label Text="Hi Admin"
+                   FontSize="21"
+                   FontAttributes="Bold"
+                   TextColor="DarkOliveGreen"/>
+        
+        </StackLayout>
+        <StackLayout Margin="20 ">
+            <Label Text="Manage our resource centre"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Button x:Name="AddItem"
+                    Text="Add New Item"
+                    BackgroundColor="#b0ddc0"
+                    TextColor="Black"
+                    FontFamily="Roboto"
+                    CornerRadius="30"
+                    Clicked="AddItem_Clicked"/>
 
+            <Button x:Name="getDetails"
+                    Text="Get Details"
+                    BackgroundColor="#b0ddc0"
+                    TextColor="Black"
+                    FontFamily="Roboto"
+                    CornerRadius="30"
+                    Clicked="getDetails_Clicked"/>
 
-        <ListView x:Name="TodoList" ItemsSource="{Binding TodoItems}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-
-                        <FlexLayout JustifyContent="SpaceBetween" AlignItems="Center" Padding="20,0">
-
-                            <ContentView>
-                                <FlexLayout AlignItems="Center">
-                                    <Label Text="{Binding TodoText}"/>
-                                    <CheckBox IsChecked="{Binding Complete}"/>
-                                </FlexLayout>
-                            </ContentView>
-
-                            <ImageButton
-                                Command="{Binding Path=BindingContext.RemoveTodoCommand, Source={x:Reference TodoList}}"
-                                CommandParameter="{Binding .}"
-                                Source="delete.png"
-                                BackgroundColor="Transparent"   
-
-                                />
-
-                        </FlexLayout>
-
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            <Button x:Name="editDetails"
+                    Text="Edit"
+                    BackgroundColor="#b0ddc0"
+                    TextColor="Black"
+                    FontFamily="Roboto"
+                    CornerRadius="30"
+                    Clicked="editDetails_Clicked"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>

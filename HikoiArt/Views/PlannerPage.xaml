@@ -17,48 +17,42 @@
                    FontAttributes="Bold"
                    TextColor="Black"/>
                 <Entry
-                    x:Name="TitleInput"
+                    x:Name="_titleInput"
                     Text="{Binding NewTitleInputValue}"
                     Placeholder="Class/ Event Title"
                     ReturnCommand="{Binding AddTitleCommand}"/>
                 <Entry
-                    x:Name="PurposeInput"
+                    x:Name="_purposeInput"
                     Text="{Binding NewPurposeInputValue}"
                     Placeholder="Purpose of the class"
                     ReturnCommand="{Binding AddPurposeCommand}"/>
                 
                 <Entry
-                    x:Name="ThemeInput"
+                    x:Name="_themeInput"
                     Text="{Binding ThemeInputValue}"
                     Placeholder="Theme to help delivery the class"
                     ReturnCommand="{Binding AddThemeCommand}"/>
                 
-                <StackLayout>
-                   <Entry
-                    x:Name="MaterialInput"
+                
+                <Entry
+                    x:Name="_materialInput"
                     Text="{Binding MaterialInputValue}"
                     Placeholder="Material list"
                     ReturnCommand="{Binding AddMaterialCommand}"/> 
-                </StackLayout>
+                
 
                 <Entry
-                    x:Name="ReferencesInput"
+                    x:Name="_referencesInput"
                     Text="{Binding ReferencesInputValue}"
                     Placeholder="Useful references"
                     ReturnCommand="{Binding AddReferencesCommand}"/>
                 
                 <Entry
-                    x:Name="PromotionInput"
+                    x:Name="_promotionInput"
                     Text="{Binding PromotionInputValue}"
                     Placeholder="Promotion of the class"
                     ReturnCommand="{Binding AddPromotionCommand}"/>
-                <!--<StackLayout>
-                    <Entry
-                    x:Name="WeelklyPlan"
-                    Text="{Binding WeeklyPlanValue}"
-                    Placeholder="Weekly Plan"
-                    ReturnCommand="{Binding AddWeeklyPlanCommand}"/>
-                </StackLayout>-->
+              
             </StackLayout>
             </StackLayout>
             
@@ -66,7 +60,7 @@
                 <FlexLayout Wrap="Wrap"
                             JustifyContent="SpaceAround">
                 <Button x:Name="AddEvent"
-                    Text="Add New Event"
+                    Text="Create Event"
                     BackgroundColor="#b0ddc0"
                     TextColor="black"
                     Clicked="AddEvent_Clicked"/>
@@ -77,11 +71,6 @@
                     TextColor="Black"
                     Clicked="getClassDetails_Clicked"/>
 
-                <Button x:Name="editClassDetails"
-                    Text="Edit"
-                    BackgroundColor="#b0ddc0"
-                    TextColor="Black"    
-                    Clicked="editClassDetails_Clicked"/>
                 </FlexLayout>
             </StackLayout>
         </StackLayout>

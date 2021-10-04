@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HikoiArt.Views.EventClassDetails">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="View all Events details"/>
+
+            <ListView x:Name="listview" ItemSelected="listview_ItemSelected"/>
+
+            <Entry x:Name="ID" Keyboard="Text" Placeholder="ID" IsVisible="False"/>
+            <Entry x:Name="_titleInput" Keyboard="Text" Placeholder="Class/ Event Title"/>
+            <Entry x:Name="_purposeInput" Keyboard="Text" Placeholder="Purpose of the class"/>
+            <Entry x:Name="_themeInput" Keyboard="Text" Placeholder="Theme to help delivery the class"/>
+            <Entry x:Name="_materialInput" Keyboard="Text" Placeholder="Material list"/>
+            <Entry x:Name="_referencesInput" Keyboard="Text" Placeholder="Useful references" />
+            <Entry x:Name="_promotionInput" Keyboard="Text" Placeholder="Promotion of the class"/>
+
+            <Button x:Name="updateClassDetails"
+                    Text="Edit"
+                    BackgroundColor="#b0ddc0"
+                    TextColor="Black"    
+                    Clicked="updateClassDetails_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

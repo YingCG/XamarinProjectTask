@@ -13,7 +13,6 @@ namespace HikoiArt.Model
 
         [PrimaryKey]
         public int Id { get; set; }
-
         public string Title { get; set; }
         public string Purpose { get; set; }
         public string Theme { get; set; }

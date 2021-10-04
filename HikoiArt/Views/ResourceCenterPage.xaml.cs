@@ -34,13 +34,24 @@ namespace HikoiArt.Views
 
         private async void manageEvent_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.PlannerPage());
+            await Navigation.PushAsync(new Views.EventClassDetails());
         }
 
         
         private async void manageTask_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.MyResoucePage());
+            await Navigation.PushAsync(new Views.TodoList());
+        }
+
+        private async void addEvent_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.PlannerPage());
+        }
+
+        private async void currentEvents_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.CurrentEventsPage());
         }
     }
-} 
+    
+}  

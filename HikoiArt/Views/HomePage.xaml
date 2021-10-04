@@ -12,7 +12,7 @@
     </TabbedPage.ToolbarItems>
     <views:MyWalkPage Title="Walk"/>
     <views:ArtPage Title="Art"/>
-    <views:MyResoucePage Title="Resource"/>
+    <views:GetDetailsPage Title="Resource"/>
 </TabbedPage>
 
 

@@ -41,13 +41,28 @@
             <Label Text="Planning events and art classes"
                    FontAttributes="Bold"
                    TextColor="Black"/>
+            
+            <!--<Button x:Name="currentEvents"
+                    Text="Current Events"
+                    Style="{StaticResource normalButton}"
+                    BackgroundColor="#b0ddc0"
+                    TextColor="Black"
+                    Clicked="currentEvents_Clicked"/>-->
+            
+            <Button x:Name="addEvent"
+                    Text="Add Event"
+                    Style="{StaticResource normalButton}"
+                    BackgroundColor="#b0ddc0"
+                    TextColor="Black"
+                    Clicked="addEvent_Clicked"/>
+
             <Button x:Name="manageEvent"
                     Text="Manage Event"
                     Style="{StaticResource normalButton}"
                     BackgroundColor="#b0ddc0"
                     TextColor="Black"
                     Clicked="manageEvent_Clicked"/>
-       
+            
             <Button x:Name="manageTask"
                     Text="Manage Task"
                     Style="{StaticResource normalButton}"

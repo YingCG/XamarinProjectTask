@@ -14,7 +14,7 @@ namespace HikoiArt.Views
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.ProfilePage());
+            await Navigation.PushAsync(new Views.LoginPage());
         }
     }
 }

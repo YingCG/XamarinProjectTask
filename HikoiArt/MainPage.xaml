@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+    
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HikoiArt.MainPage">
+             x:Class="HikoiArt.MainPage"
+             >
+
     <ScrollView>
+        
         <StackLayout>
-            <Image Source="IMG_20200329_180315.jpg"></Image>
+            <Image Source="IMG_20200329_180315.jpg"/>
             <Label Text="Let creativity part of your Everyday life" 
                    Margin="20, 20, 20, 0"
                    FontSize="21"

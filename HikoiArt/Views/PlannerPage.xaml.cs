@@ -42,19 +42,11 @@ namespace HikoiArt.Views
             await Navigation.PopAsync();
         }
 
-        private void getClassDetails_Clicked(object sender, EventArgs e)
+        private async void getClassDetails_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Views.GetDetailsPage());
         }
 
-        private void editClassDetails_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void currentEvents_Clicked(object sender, EventArgs e)
-        {
-
-        }
+   
     }
 }

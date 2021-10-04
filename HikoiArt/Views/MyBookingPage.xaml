@@ -3,10 +3,156 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HikoiArt.Views.MyBookingPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout BackgroundColor="#b0ddc0">
+                    <StackLayout Margin="20">
+                        <Label Text="Creative Waste Workshop" 
+                           FontSize="21"
+                           TextColor="Black"
+                           FontFamily="Roboto"
+                           FontAttributes="Bold"/>
+                        <FlexLayout AlignItems="Stretch">
+                            <Label Text="8 weeks course" 
+                               FontSize="15"
+                               TextColor="DarkOliveGreen"
+                               FontFamily="Roboto"
+                               FontAttributes="Bold"/>
+
+                            <Label Text="2hrs per week" 
+                               FontSize="15"
+                               TextColor="DarkOliveGreen"
+                               FontFamily="Roboto"
+                               FontAttributes="Bold"/>
+                        </FlexLayout>
+
+
+                        <Label Text="We believe everyone is creative, everyone has a story to tell, and everyone can be shown the skills. We use waste material from the resource centre do introduct creative thinking"
+                        TextColor="Black"
+                       FontFamily="Roboto"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Margin="20">
+                <Label Text="Course Content"
+                           TextColor="Black"
+                           FontSize="18"
+                           FontFamily="Roboto"
+                           FontAttributes="Bold"/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Week 1" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="Bold"
+                               Grid.Column="0"
+                               Grid.Row="0"/>
+                    <Label Text="Creative Thinking - intro" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="None"
+                               Grid.Column="1"
+                               Grid.Row="0"/>
+
+                    <Label Text="Week 2" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="Bold"
+                               Grid.Column="0"
+                               Grid.Row="1"/>
+                    <Label Text="Discover your creative strength" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="None"
+                               Grid.Column="1"
+                               Grid.Row="1"/>
+
+                    <Label Text="Week 3" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="Bold"
+                               Grid.Column="0"
+                               Grid.Row="2"/>
+                    <Label Text="Waste rediscover &amp; repurpose" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="None"
+                               Grid.Column="1"
+                               Grid.Row="2"/>
+
+                    <Label Text="Week 4" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="Bold"
+                               Grid.Column="0"
+                               Grid.Row="3"/>
+                    <Label Text="Apply waste with Creative skills" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="None"
+                               Grid.Column="1"
+                               Grid.Row="3"/>
+
+                    <Label Text="Week 5" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="Bold"
+                               Grid.Column="0"
+                               Grid.Row="4"/>
+                    <Label Text="Creative waste process" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="None"
+                               Grid.Column="1"
+                               Grid.Row="4"/>
+
+                    <Label Text="Week 6" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="Bold"
+                               Grid.Column="0"
+                               Grid.Row="5"/>
+                    <Label Text="Creative waste process" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="None"
+                               Grid.Column="1"
+                               Grid.Row="5"/>
+
+                    <Label Text="Week 7" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="Bold"
+                               Grid.Column="0"
+                               Grid.Row="6"/>
+                    <Label Text="Creative waste process" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="None"
+                               Grid.Column="1"
+                               Grid.Row="6"/>
+
+                    <Label Text="Week 8" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="Bold"
+                               Grid.Column="0"
+                               Grid.Row="7"/>
+                    <Label Text="Creative finalize &amp; documentation" 
+                               TextColor="Black"
+                               FontFamily="Roboto"
+                               FontAttributes="None"
+                               Grid.Column="1"
+                               Grid.Row="7"/>
+                </Grid>
+                </StackLayout>
+             </StackLayout>
+           
+        </ScrollView>
     </ContentPage.Content>
-</ContentPage>
+</ContentPage>                                                

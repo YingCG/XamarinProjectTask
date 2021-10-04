@@ -31,7 +31,7 @@
                                 </ContentView>
 
                                 <ImageButton
-                                Command="{Binding Path=BindingContext.RemoveTodoCommand, Source={x:Reference TodoList}}"
+                                Command="{Binding Path=BindingContext.RemoveTodoCommand, Source={x:Reference TodoListView}}"
                                 CommandParameter="{Binding .}"
                                 Source="delete.png"
                                 BackgroundColor="Transparent"   

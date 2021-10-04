@@ -23,12 +23,12 @@ namespace HikoiArt.Views
 
         async private void MyActivity_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.MyActivityPage());
+            await Navigation.PushAsync(new Views.TodoList());
         }
 
         async private void MyResource_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.MyResoucePage());
+            await Navigation.PushAsync(new Views.GetDetailsPage());
         }
     }
 }

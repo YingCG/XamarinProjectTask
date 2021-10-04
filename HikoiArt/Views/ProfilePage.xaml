@@ -5,8 +5,8 @@
     x:Class="HikoiArt.Views.ProfilePage">
         <ScrollView>
             <StackLayout Margin="20">
-                
-                <Button x:Name="MyBooking"
+            <Image Source="Sheep.jpg"/>
+            <Button x:Name="MyBooking"
                         Text="My Booking"
                         Style="{StaticResource normalButton}"
                         Clicked="MyBooking_Clicked"/>

@@ -57,7 +57,7 @@
                     Clicked="addEvent_Clicked"/>
 
             <Button x:Name="manageEvent"
-                    Text="Manage Event"
+                    Text="Event Details"
                     Style="{StaticResource normalButton}"
                     BackgroundColor="#b0ddc0"
                     TextColor="Black"

@@ -48,12 +48,12 @@ namespace HikoiArt.Views
         {
             classEvent = (Model.ClassEvent)e.SelectedItem;
             ID.Text = classEvent.Id.ToString();
-            _titleInput.Text = classEvent.Title.ToString();
-            _purposeInput.Text = classEvent.Purpose.ToString();
-            _themeInput.Text = classEvent.Theme.ToString();
-            _materialInput.Text = classEvent.MaterialList.ToString();
-            _referencesInput.Text = classEvent.References.ToString();
-            _promotionInput.Text = classEvent.Promotion.ToString();
+            _titleInput.Text = classEvent.Title;
+            _purposeInput.Text = classEvent.Purpose;
+            _themeInput.Text = classEvent.Theme;
+            _materialInput.Text = classEvent.MaterialList;
+            _referencesInput.Text = classEvent.References;
+            _promotionInput.Text = classEvent.Promotion;
         }
     }
 }

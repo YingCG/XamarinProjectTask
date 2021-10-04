@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HikoiArt.App">
+             x:Class="HikoiArt.App" >
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="darkOliveGreen">DarkOliveGreen</Color>
@@ -15,18 +15,7 @@
                 <Setter Property="CornerRadius" Value="50"/>
             </Style>
 
-            
+
         </ResourceDictionary>
-        <!--<ResourceDictionary>
-            <Color x:Key="mintGreen">#b0ddc0</Color>
-            <Color x:Key="black">black</Color>
-            <Style  x:Key="adminButton" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="{StaticResource mintGreen}"/>
-                <Setter Property="BackgroundColor" Value="{StaticResource black}"/>
-                <Setter Property="Font" Value="{StaticResource buttonFont}"/>
-                <Setter Property="CornerRadius" Value="{StaticResource roundCorner}"/>
-                <Setter Property="FontAttributes" Value="None"/>
-            </Style>
-        </ResourceDictionary>-->
     </Application.Resources>
 </Application>

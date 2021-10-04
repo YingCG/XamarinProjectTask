@@ -127,5 +127,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\EggShellFaces.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tree.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

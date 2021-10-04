@@ -171,4 +171,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\EggShellFaces.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tree.png" />
+  </ItemGroup>
 </Project>

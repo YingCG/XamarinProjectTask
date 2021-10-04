@@ -16,5 +16,10 @@ namespace HikoiArt.Views
         {
             InitializeComponent();
         }
+
+        public async void homeBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.HomePage());
+        }
     }
 }

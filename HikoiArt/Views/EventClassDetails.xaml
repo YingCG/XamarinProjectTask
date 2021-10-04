@@ -4,6 +4,8 @@
              x:Class="HikoiArt.Views.EventClassDetails">
     <ContentPage.Content>
         <StackLayout Margin="20">
+           
+            
             <Label Text="View all Events details"/>
 
             <ListView x:Name="listview" ItemSelected="listview_ItemSelected"/>
@@ -21,6 +23,16 @@
                     BackgroundColor="#b0ddc0"
                     TextColor="Black"    
                     Clicked="updateClassDetails_Clicked"/>
+            
+ <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

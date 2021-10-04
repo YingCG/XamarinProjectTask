@@ -5,6 +5,7 @@
 
     <StackLayout>
         <StackLayout Margin="20">
+           
         <Label Text="Hi Admin"
                    FontSize="21"
                    FontAttributes="Bold"
@@ -70,5 +71,15 @@
                     TextColor="Black"
                     Clicked="manageTask_Clicked"/>
         </StackLayout>
+
+        <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
     </StackLayout>
 </ContentPage>

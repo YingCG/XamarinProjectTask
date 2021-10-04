@@ -5,6 +5,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="20">
+                
+                
                 <Image Source="BookPages.jpg"/>
                 <Label>Art work from old books</Label>
 
@@ -19,6 +21,16 @@
 
                 <Image Source="WindowsDoors.jpg"/>
                 <Label>Where is the entrances?</Label>
+
+               <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
             </StackLayout>
         </ScrollView> 
     </ContentPage.Content>

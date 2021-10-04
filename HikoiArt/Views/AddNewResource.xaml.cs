@@ -19,6 +19,10 @@ namespace HikoiArt.Views
             InitializeComponent();
         }
 
+        public async void homeBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.HomePage());
+        }
         private async void addBtn_Clicked(object sender, EventArgs e)
         {
             var db = new SQLiteConnection(_dbpath);

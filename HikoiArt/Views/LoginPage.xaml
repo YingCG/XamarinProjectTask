@@ -6,7 +6,6 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="EggShellFaces.jpg"/>
             <StackLayout Margin="20">
             <Label Text="Log in to the Hikoi Art"
                    FontSize="21"
@@ -33,8 +32,23 @@
                         Style="{StaticResource normalButton}"
                         Padding="50, 0, 50, 0"
                         Clicked="adminLogin_Clicked"/>
-            </FlexLayout>
+            </FlexLayout> 
+                
         </StackLayout>
+            <Image Source="EggShellFaces.jpg"/>
+
+            <ImageButton x:Name="homeBtn"
+                         Margin="20"
+                         Source="tree.png"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
+
+            
         </StackLayout>
     </ContentPage.Content>
 

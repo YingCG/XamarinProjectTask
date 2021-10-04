@@ -9,8 +9,9 @@
     <TabbedPage.ToolbarItems>
         <ToolbarItem Text="Profile"
                      Clicked="ToolbarItem_Clicked"/>
-
+        
     </TabbedPage.ToolbarItems>
+    
     <views:MyWalkPage Title="Walk"/>
     <views:ArtPage Title="Art"/>
     <views:GetDetailsPage Title="Resource"/>

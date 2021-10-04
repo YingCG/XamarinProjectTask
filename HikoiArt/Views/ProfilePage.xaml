@@ -3,8 +3,10 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="HikoiArt.Views.ProfilePage">
+    <StackLayout>
         <ScrollView>
             <StackLayout Margin="20">
+                
             <Image Source="Sheep.jpg"/>
             <Button x:Name="MyBooking"
                         Text="My Booking"
@@ -20,6 +22,14 @@
                         Clicked="MyResource_Clicked"/>
         </StackLayout>
         </ScrollView>
-       
-   
+        <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
+    </StackLayout>
 </ContentPage>

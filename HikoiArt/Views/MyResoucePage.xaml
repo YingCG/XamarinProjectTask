@@ -10,6 +10,8 @@
     </ContentPage.BindingContext>
     
     <StackLayout>
+        
+        
         <Entry
             x:Name="TodoInput"
             Text="{Binding NewTodoInputValue}"
@@ -45,6 +47,17 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        </StackLayout>
+        <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         Margin="20"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
+    </StackLayout>
+    
 </ContentPage>
 

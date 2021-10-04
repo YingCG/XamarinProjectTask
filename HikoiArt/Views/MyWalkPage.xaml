@@ -6,6 +6,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+                
+                
                 <Image Source="walking.jpg"></Image>
                 <Label Text="Experience the relationship between people and places" 
                    Margin="20, 20, 20, 0"
@@ -30,7 +32,16 @@
                     Text="Log In"
                     Style="{StaticResource normalButton}"
                     Clicked="KeepTrack_Clicked" />
-               
+               <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         Margin="20"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
             </StackLayout>
        </ScrollView>
     </ContentPage.Content>

@@ -9,28 +9,30 @@
         </ContentPage.BindingContext>
 
         <StackLayout>
-            <Entry
+
+            
+        <Entry
             x:Name="TodoInput"
             Text="{Binding NewTodoInputValue}"
             Placeholder="Create New event"
             ReturnCommand="{Binding AddTodoCommand}"/>
 
 
-            <ListView x:Name="TodoListView" ItemsSource="{Binding TodoItems}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
+        <ListView x:Name="TodoListView" ItemsSource="{Binding TodoItems}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
 
-                            <FlexLayout JustifyContent="SpaceBetween" AlignItems="Center" Padding="20,0">
+                        <FlexLayout JustifyContent="SpaceBetween" AlignItems="Center" Padding="20,0">
 
-                                <ContentView>
-                                    <FlexLayout AlignItems="Center">
-                                        <Label Text="{Binding TodoText}"/>
-                                        <CheckBox IsChecked="{Binding Complete}"/>
-                                    </FlexLayout>
-                                </ContentView>
+                            <ContentView>
+                                <FlexLayout AlignItems="Center">
+                                    <Label Text="{Binding TodoText}"/>
+                                    <CheckBox IsChecked="{Binding Complete}"/>
+                                </FlexLayout>
+                            </ContentView>
 
-                                <ImageButton
+                            <ImageButton
                                 Command="{Binding Path=BindingContext.RemoveTodoCommand, Source={x:Reference TodoListView}}"
                                 CommandParameter="{Binding .}"
                                 Source="delete.png"
@@ -38,13 +40,22 @@
 
                                 />
 
-                            </FlexLayout>
+                        </FlexLayout>
 
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            
-        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         Margin="20"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
+    </StackLayout>
     
 </ContentPage>

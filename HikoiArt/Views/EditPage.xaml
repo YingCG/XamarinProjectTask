@@ -4,6 +4,9 @@
              x:Class="HikoiArt.Views.EditPage">
     <ContentPage.Content>
         <StackLayout Margin="20">
+
+            
+            
             <ListView x:Name="listview"/>
             <Entry x:Name="ID" Keyboard="Text" Placeholder="ID" IsVisible="False"></Entry>
             <Entry x:Name="name" Keyboard="Text" Placeholder="Item Name"></Entry>
@@ -14,7 +17,17 @@
                     TextColor="Black"
                     FontFamily="Roboto"
                     CornerRadius="50"
-                    Clicked="update_Clicked"></Button>
+                    Clicked="update_Clicked"/>
+
+            <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

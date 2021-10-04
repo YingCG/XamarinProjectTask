@@ -48,9 +48,14 @@ namespace HikoiArt.Views
             await Navigation.PushAsync(new Views.PlannerPage());
         }
 
-        private async void currentEvents_Clicked(object sender, EventArgs e)
+        //private async void currentEvents_Clicked(object sender, EventArgs e)
+        //{
+        //    await Navigation.PushAsync(new Views.CurrentEventsPage());
+        //}
+
+        public async void homeBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.CurrentEventsPage());
+            await Navigation.PushAsync(new Views.HomePage());
         }
     }
     

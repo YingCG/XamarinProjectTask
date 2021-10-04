@@ -45,5 +45,10 @@ namespace HikoiArt.Views
             await DisplayAlert(null, " Your data has been successfully updated", "OK");
             await Navigation.PopAsync();
         }
+
+        public async void homeBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.HomePage());
+        }
     }
 }

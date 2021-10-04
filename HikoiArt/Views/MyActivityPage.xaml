@@ -5,20 +5,30 @@
     x:Class="HikoiArt.Views.MyActivityPage">
     <ContentPage.Content>
         <ScrollView>
+            
+            
             <Grid>
+                
+                
                 <Label Text="your map of this week"/>
                 <Button x:Name="Profile"
                                     Text="Profile"
                                     Clicked="Profile_Clicked"/>
-                <!--<FlexLayout>
-                    <
-                    <Button x:Name="MyBooking"
-                                Text="MyBooking"
-                                Clicked="MyBooking_Clicked"/>
-                    <Button x:Name="MyActivity"
-                                Text="My Activity"
-                                Clicked="MyActivity_Clicked"/>
-                </FlexLayout>-->
+                
+                
+                <StackLayout>
+                    <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         Margin="20"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
+                    
+                </StackLayout>
             </Grid>
         </ScrollView>
         

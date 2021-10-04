@@ -7,8 +7,9 @@
              >
 
     <ScrollView>
-        
         <StackLayout>
+            
+
             <Image Source="IMG_20200329_180315.jpg"/>
             <Label Text="Let creativity part of your Everyday life" 
                    Margin="20, 20, 20, 0"
@@ -28,13 +29,15 @@
                        TextColor="Black"
                        FontFamily="Roboto"/>
             </StackLayout>
-
-            <Button x:Name="BrowseBtn"
-                    Padding="100, 5, 100, 5"
-                    HorizontalOptions="Center"
-                    Text="Browse"
-                    Style="{StaticResource normalButton}"
-                    Clicked="BrowseBtn_Clicked" />
+            <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

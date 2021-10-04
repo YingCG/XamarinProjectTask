@@ -21,5 +21,10 @@ namespace HikoiArt.Views
             var db = new SQLiteConnection(_dbpath);
             listview.ItemsSource = db.Table<Model.Resource>().OrderBy(x => x.ItemName).ToList();
         }
+
+        public async void homeBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.HomePage());
+        }
     }
 }

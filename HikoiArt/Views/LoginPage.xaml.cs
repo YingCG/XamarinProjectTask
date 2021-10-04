@@ -12,6 +12,11 @@ namespace HikoiArt.Views
             InitializeComponent();
         }
 
+        public async void homeBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.HomePage());
+        }
+
         async void loginButton_Clicked(System.Object sender, System.EventArgs e)
         {
             bool isEmailEmpty = string.IsNullOrEmpty(emailEntry.Text);

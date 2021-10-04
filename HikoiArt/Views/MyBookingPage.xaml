@@ -5,6 +5,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+               
+                
                 <StackLayout BackgroundColor="#b0ddc0">
                     <StackLayout Margin="20">
                         <Label Text="Creative Waste Workshop" 
@@ -150,7 +152,19 @@
                                Grid.Column="1"
                                Grid.Row="7"/>
                 </Grid>
+
+                    <ImageButton x:Name="homeBtn"
+                         Source="tree.png"
+                         Margin="20"
+                         CornerRadius="50"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         HorizontalOptions="Center"
+                         Padding="5"
+                         BackgroundColor="DarkOliveGreen"
+                         Clicked="homeBtn_Clicked"/>
                 </StackLayout>
+                
              </StackLayout>
            
         </ScrollView>

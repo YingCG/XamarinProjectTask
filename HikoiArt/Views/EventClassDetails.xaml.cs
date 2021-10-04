@@ -55,5 +55,10 @@ namespace HikoiArt.Views
             _referencesInput.Text = classEvent.References;
             _promotionInput.Text = classEvent.Promotion;
         }
+
+        public async void homeBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.HomePage());
+        }
     }
 }

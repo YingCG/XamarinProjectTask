@@ -21,6 +21,6 @@ namespace HikoiArt
             await Navigation.PushAsync(new Views.HomePage());
         }
 
-       
-    }  
+
+    }
 }

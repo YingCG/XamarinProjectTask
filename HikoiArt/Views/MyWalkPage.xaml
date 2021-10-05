@@ -25,13 +25,13 @@
                            FontFamily="Roboto"
                            />
                 </StackLayout>
-                    <Button x:Name="KeepTrack"
+                    <!--<Button x:Name="KeepTrack"
                             Margin="20"
                     Padding="100, 0, 100, 0"
                     HorizontalOptions="Center"
                     Text="Log In"
                     Style="{StaticResource normalButton}"
-                    Clicked="KeepTrack_Clicked" />
+                    Clicked="KeepTrack_Clicked" />-->
                <ImageButton x:Name="homeBtn"
                          Source="tree.png"
                          Margin="20"

@@ -16,12 +16,13 @@ namespace HikoiArt.Views
 
     public partial class EventClassDetails : ContentPage
     {
-        string _dbpath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "classesdb");
+        string _dbpath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "resourcedb");
         Model.ClassEvent classEvent = new Model.ClassEvent();
         public EventClassDetails()
         {
             InitializeComponent();
             var db = new SQLiteConnection(_dbpath);
+            db.CreateTable<Model.ClassEvent>();
             listview.ItemsSource = db.Table<Model.ClassEvent>().OrderBy(x => x.Title).ToList();
             listview.ItemSelected += listview_ItemSelected;
         }

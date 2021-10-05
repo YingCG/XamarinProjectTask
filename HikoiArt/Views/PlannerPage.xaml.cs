@@ -9,7 +9,7 @@ namespace HikoiArt.Views
 {
     public partial class PlannerPage : ContentPage
     {
-        string _dbpath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "classesdb");
+        string _dbpath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "resourcedb");
         Model.ClassEvent classEvent = new Model.ClassEvent();
         
         public PlannerPage()
